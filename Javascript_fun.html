@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript tutorial</title>
+
+</head>
+<body>
+    <script>
+        //function in javascript to add two numbers
+        function sum(a,b){
+            return a+b;
+        }
+        //calling function
+        let result = sum(5,6);        
+        document.write(result);
+    </script><br>
+    <script>
+         // function to display greetings
+         function greetings(name){
+            let msg = 'Hello '+name;
+            return msg;
+        }
+        document.write(greetings('Rahul')); 
+    </script> <br>  
+    <script>
+        function product(a,b){
+            return a*b;
+        }
+        let result1 = product(50,60);
+        document.write(result1);
+    </script> <br>
+    <script>
+        //Variables declared within a JavaScript function, become LOCAL to the function.
+        function myFunction() {
+            var carName = "Volvo"
+            return carName; 
+            }
+        document.write(myFunction());
+
+    </script>
+    
+</body>
+</html>
