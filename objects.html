@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript tutorial</title>
+    
+</head>
+<body>
+    <h1>Learning how to create objects in javascript</h1>
+    <button onclick="introduceSelf()">click here</button>
+    <br>
+    <button onclick="goBack()">Return</button>
+    
+    <script>
+        function introduceSelf() {
+            document.write("Ezkiel is 30 years old and lives in Kenya <br>");
+        }
+        
+        function goBack() {
+            window.history.back();
+        }
+    </script><br>
+  
+    <script>
+        // create of object using user defined function
+        function person(name, age, country){
+            this.name = name;
+            this.age = age;
+            this.country = country;
+        }
+        //calling the function
+        let person1 = new person("Ezkiel", 30, "Kenya");
+        let person2 = new person("John", 25, "Uganda");
+        let person3 = new person("Mary", 20, "Tanzania");
+        let person4 = new person("Jane", 35, "Rwanda");
+    </script>
+    <script>
+    //create function to display the object    
+        function welcome() {
+            document.write(person1.name + " is " + person1.age + " years old and lives in " + person1.country + "<br>");
+            document.write(person2.name + " is " + person2.age + " years old and lives in " + person2.country + "<br>");
+            document.write(person3.name + " is " + person3.age + " years old and lives in " + person3.country + "<br>");
+            document.write(person4.name + " is " + person4.age + " years old and lives in " + person4.country + "<br>");
+        }
+        </script>
+        <!--button to call the objects-->    
+    <button onclick="welcome()">Details</button>
+    
+
+    
+</body>
+</html>
