@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead id="table-data">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- populate the table-->
+        </tbody>
+    </table>
+   
+    
+    <script>
+        //how to create objects and access them
+
+        let person1 = [{
+            name : "Ezekiel Ngeno",
+            Age : 39
+        },
+        {
+            name : "Ezekiel Ngeno",
+            Age : 39
+        }]
+       function populateTable(person1){
+        let tableBody = document.querySelector('#table-body');
+        tableBody.innerHTML = '';
+    
+        person1.forEach(function(item){
+            let row = document.createElement('tr');
+            row.innerHTML = '<td>' + item.name + '</td>' +
+                             '<td>' + item.Age + '</td>';
+
+                tableBody.appendChild(row);             
+        
+        });
+    }
+    populateTable(person1);
+    </script>
+</body>
+</html>
