@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+<body>
+    <h1>Welcome home</h1>
+    <p id="demo"></p>
+    <script>
+        let students= new Set(['ngeno', 'ngeno2', 'benard']);            
+        let text = '';
+        students.forEach(function(item){
+            text += item + "<br>";
+        })
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>
