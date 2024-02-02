@@ -6,15 +6,15 @@
     <title>forEach</title>
 </head>
 <body>
-    <h1>Welcome home</h1>
     <p id="demo"></p>
     <script>
-        let students= new Set(['ngeno', 'ngeno2', 'benard']);            
+        let numbers = new Set(['1', '2', '3', '4', '5']);
+
         let text = '';
-        students.forEach(function(item){
-            text += item + "<br>";
-        })
-        document.getElementById("demo").innerHTML = text;
+        numbers.forEach(function(values){
+            text += values + '  ';
+        });
+        document.getElementById('demo').innerHTML = text;
     </script>
 </body>
 </html>
